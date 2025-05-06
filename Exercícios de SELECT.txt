@@ -1,0 +1,133 @@
+Exercícios de SELECT
+
+    Liste os pacientes com nome iniciando com "Jo" e que nasceram após 1990.
+
+    Mostre os funcionários com função "Dentista" e email contendo "gmail".
+
+    Liste os fornecedores cujo nome fantasia contém "Dental" e CNPJ que contenha o número "12".
+
+    Mostre os procedimentos com valor maior que 200 e nome contendo "Canal".
+
+    Liste os pacientes com data de nascimento entre 1980 e 1990 e que moram em endereços com "Rua".
+
+    Selecione os materiais cujo tipo é "Material' e estoque maior que 100.
+
+    Liste os funcionários com especialidade "Ortodontia" e CPF terminado em "00".
+
+    Mostre os agendamentos para o tipo "Avaliação" em salas com ID maior que 2.
+
+    Encontre os recebimentos com valor maior que 500 e status igual a "pago".
+
+    Liste as despesas com valor entre 500 e 3000 e descrição contendo "luz".
+
+    Selecione os pacientes com CPF contendo "123" e celular começando com "(11)".
+
+    Liste os procedimentos com tempo maior que 30 minutos e requisitos contendo "Raio-X".
+
+    Selecione compras feitas por funcionário com ID 2 e valor acima de 500.
+
+    Mostre consultas com data no mês de outubro e valor acima de 500.
+
+    Encontre os materiais com descrição contendo "resina" e valor menor que 50.
+
+    Liste os funcionários com data de nascimento entre 1980 e 1995 e função "Recepcionista".
+
+    Mostre os agendamentos com data entre '2024-01-01' e '2024-12-31' e tipo "Cirurgia".
+
+    Selecione pacientes com nome que contenha "Silva" e email contendo "gmail".
+
+    Mostre as consultas pagas com forma de pagamento "cartão" e valor maior que 100.
+
+    Liste salas com nome contendo "atendimento" e número de cadeiras maior que 2.
+
+
+Exercícios de UPDATE
+
+    Atualize o valor dos procedimentos com nome contendo "Canal" e tempo maior que 1 hora, aumentando em 10%.
+
+    Atualize o status dos recebimentos vencidos (data_vencimento_rec < CURDATE()) e valor maior que 100 para "atrasado".
+
+    Atualize o estoque dos materiais cujo nome contenha "agulha" e tipo seja "Descartável", subtraindo 10 unidades.
+
+    Altere o status das caixas com data_fechamento anterior a hoje e saldo final menor que 0 para "fechado com erro".
+
+    Atualize o endereço dos pacientes cujo CPF contenha "999" e email contenha "gmail", adicionando " - Atualizado".
+
+    Atualize o valor das despesas com descrição contendo "água" e valor entre 50 e 100 para 120.
+
+    Mude o nome fantasia dos fornecedores com CNPJ começando com "55" e nome fantasia contendo "Dental" para "Dental Pro".
+
+    Atualize o celular dos funcionários cujo nome contenha "Maria" e função seja "Dentista" para "(00) 00000-0000".
+
+    Aumente em 15% o valor dos materiais com valor maior que 100 e estoque menor que 20.
+
+    Atualize a função dos funcionários com CPF terminado em "11" e que trabalham como "Atendente" para "Atendente Sênior".
+
+    Atualize o tipo das salas que têm "cirurgia" no nome e número de cadeiras > 1 para "Cirúrgica".
+
+    Mude a forma de pagamento das consultas com valor > 300 e data entre '2024-01-01' e '2024-06-30' para "Pix".
+
+    Atualize a quantidade na tabela Consulta_Material para 0 onde a consulta ocorreu em março e material contém "gaze".
+
+    Atualize o status dos pagamentos com data de vencimento no passado e status "pendente" para "vencido".
+
+    Aumente o valor das consultas do paciente com ID 3 e que ocorreram em 2023 em R$ 50.
+
+    Atualize a especialidade de funcionários cujo nome contenha "Ana" e função seja "Dentista" para "Ortodontista".
+
+    Altere a descrição dos procedimentos cujo nome contenha "clareamento" e valor menor que 200.
+
+    Atualize o número de cadeiras das salas tipo "Padrão" com descrição contendo "pequena" para 1.
+
+    Corrija o nome dos materiais cujo nome contenha "resnina" e tipo seja "Estético" para "resina".
+
+    Atualize o valor do procedimento "Cirurgia" com tempo > 1h e requisitos contendo "anestesia" para R$ 500.
+
+
+20 Exercícios de DELETE
+
+    Delete os pacientes com nome contendo "Teste" e CPF terminando em "000".
+
+    Exclua os agendamentos com data anterior a 2022 e tipo "Avaliação".
+
+    Delete os fornecedores com CNPJ duplicado e nome fantasia contendo "Genérico".
+
+    Remova os materiais com estoque igual a 0 e tipo "Descartável".
+
+    Delete procedimentos com valor menor que 50 e nome contendo "teste".
+
+    Exclua despesas com data anterior a 2020 e valor menor que 100.
+
+    Delete os funcionários com RG vazio e email terminando com "@teste.com".
+
+    Remova as consultas que ocorreram em feriados (ex: data_con = '2024-12-25') e valor = 0.
+
+    Delete registros de Consulta_Procedimento onde o procedimento tem valor < 50 e tempo menor que 15min.
+
+    Delete caixas com status "inativo" e saldo final < 0.
+
+    Exclua os pagamentos com status "cancelado" e valor igual a 0.
+
+    Delete os recebimentos com data de vencimento antes de 2020 e status "pago".
+
+    Exclua registros da tabela Consulta_Material onde o material não existe mais no estoque e quantidade < 1.
+
+    Remova compras com valor = 0 e feitas por funcionário com ID nulo.
+
+    Delete agendamentos em salas do tipo "Emergência" com data anterior a 2021.
+
+    Exclua procedimentos com nome contendo "falso" e descrição vazia.
+
+    Delete materiais cujo nome contenha "expirado" e estoque < 5.
+
+    Remova fornecedores com razão social contendo "inativo" e CNPJ inválido (ex: menos de 14 dígitos).
+
+    Delete despesas relacionadas a fornecedores que já foram removidos.
+
+    Exclua pacientes com email inválido (ex: sem "@") e nome contendo "excluir".
+
+
+Entrega: Script SQL.
+Observações:
+1. Adicione o seu nome na forma de comentário na primeira linha.
+2. Pule uma linha entre cada exercício.
